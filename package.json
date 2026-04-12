@@ -38,8 +38,15 @@
     "diagnostics",
     "intelmesh"
   ],
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intelmesh/intelmesh-cel.git"
+  },
+  "homepage": "https://github.com/intelmesh/intelmesh-cel#readme",
+  "bugs": {
+    "url": "https://github.com/intelmesh/intelmesh-cel/issues"
+  },
   "engines": {
     "node": ">=18"
   },
