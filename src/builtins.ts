@@ -96,6 +96,18 @@ const BUILTIN_FUNCTIONS: readonly FunctionDescriptor[] = [
     ],
   },
   {
+    name: 'score.current',
+    params: [],
+    returnType: 'int',
+    description:
+      'Returns the transient score accumulated so far in the current pipeline execution. ' +
+      'Use this in late-phase rules to react to the running risk score.',
+    examples: [
+      'score.current() > 80',
+      "score.current() > 50 && !list.contains('trusted', event.metadata.device_id)",
+    ],
+  },
+  {
     name: 'list.contains',
     params: [
       { name: 'list_name', type: 'string' },
